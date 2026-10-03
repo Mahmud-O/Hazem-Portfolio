@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node *)",
+      "Bash(npx *)",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(python *)",
+      "Bash(curl *)",
+      "Bash(del *)",
+      "mcp__shadcn__get_add_command_for_items",
+      "mcp__magicui__listRegistryItems",
+      "mcp__magicui__searchRegistryItems",
+      "mcp__magicui__getRegistryItem",
+      "Bash(timeout *)",
+      "mcp__playwright__browser_navigate",
+      "Bash(rmdir *)",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_find",
+      "mcp__playwright__browser_resize",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_evaluate",
+      "mcp__playwright__browser_close"
+    ]
+  },
+  "$version": 4
+}

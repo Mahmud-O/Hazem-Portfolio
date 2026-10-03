@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+:root {
+  --background: #050505;
+  --foreground: #fafafa;
+  --card: #0f0f10;
+  --card-foreground: #fafafa;
+  --popover: #0f0f10;
+  --popover-foreground: #fafafa;
+  --primary: #34d399;
+  --primary-foreground: #03251b;
+  --secondary: #1f1f22;
+  --secondary-foreground: #fafafa;
+  --muted: #1f1f22;
+  --muted-foreground: #a1a1aa;
+  --accent: #34d399;
+  --accent-foreground: #03251b;
+  --destructive: #ef4444;
+  --border: #1f1f22;
+  --input: #1f1f22;
+  --ring: #34d399;
+  --radius: 0.625rem;
+  --surface: #0f0f10;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: clip;
+}
+
+::selection {
+  background-color: rgba(52, 211, 153, 0.3);
+  color: #fafafa;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap, 1rem)));
+  }
+}
+
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap, 1rem)));
+  }
+}

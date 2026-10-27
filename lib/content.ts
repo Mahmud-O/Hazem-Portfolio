@@ -45,8 +45,8 @@ export const content = {
           { name: 'TikTok', url: 'https://tiktok.com/@negm.elkora' },
         ], 
         stats: [
-          { value: '26K', label: 'مشترك على YouTube' },
-          { value: '583', label: 'فيديو منشور على القناة' },
+          { value: '26K', label: 'متابع على فيسبوك' },
+          { value: '583', label: 'فيديو منشور على الصفحة' },
         ],
       },
       problemSolution: {
@@ -292,8 +292,8 @@ export const content = {
           { name: 'TikTok', url: '[Add TikTok link here]' },
         ],
         stats: [
-          { value: '26K', label: 'YouTube subscribers' },
-          { value: '583', label: 'Videos published on the channel' },
+          { value: '26K', label: 'Facebook followers' },
+          { value: '583', label: 'Videos published on the page' },
           { value: 'Ongoing', label: 'Editing partnership' },
         ],
       },
